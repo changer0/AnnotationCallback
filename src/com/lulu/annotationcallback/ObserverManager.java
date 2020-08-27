@@ -8,8 +8,6 @@ import java.lang.reflect.Method;
  */
 public class ObserverManager {
 
-    private static final String TAG = "ObserverManager";
-
     public static void addObserver(final Observer observer) {
         Class<? extends Observer> clazz = observer.getClass();
         Method[] methods = clazz.getMethods();
